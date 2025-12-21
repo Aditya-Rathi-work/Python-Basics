@@ -36,4 +36,8 @@ print(len(a))
 txt = " The best thing in life are free"
 print("free" in txt)
 
+#using it in an "if" statement
+
+if "free" in txt:
+   print("yes,  'free' is present")
 
