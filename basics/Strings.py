@@ -32,4 +32,8 @@ for a in "banana":
 a = "Hello, World!" 
 print(len(a))
 
+#Check string
+txt = " The best thing in life are free"
+print("free" in txt)
+
 
