@@ -41,4 +41,18 @@ print("free" in txt)
 if "free" in txt:
    print("yes,  'free' is present")
 
+if "expensive"  not in txt:
+    print("No, 'expensive' is not in txt")
 
+#Slicing
+
+#return a raneg of characters using syntax slice
+
+b="Hello, World"
+print(b[2:5])
+
+#slice from the start
+print(b[:5])
+
+#slice till the end
+print(b[2:])
