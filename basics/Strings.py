@@ -48,11 +48,16 @@ if "expensive"  not in txt:
 
 #return a raneg of characters using syntax slice
 
-b="Hello, World"
+b="Hello, World!"
 print(b[2:5])
+#5 not included
 
 #slice from the start
 print(b[:5])
+#5 not included
 
 #slice till the end
 print(b[2:])
+
+#Negative  Indexing
+print(b[-5:-2]) 
