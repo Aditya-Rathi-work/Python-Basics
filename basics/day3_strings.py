@@ -19,6 +19,8 @@ print(c)
 # Concatenation and Repetition
 first_name="John"
 last_name="Doe"
+full_nameme=first_name+last_name
+print(full_nameme) # prints 'JohnDoe'
 full_name=first_name+" "+last_name
 print(full_name) # prints 'John Doe'
 greeting="Hello! "*3
@@ -59,3 +61,41 @@ print(len(y)) # prints length of string
 print(y[len(y)-1::-1]) # prints string in reverse order
 print(y[::3]) # prints every third character
 
+#String Immutability
+'''
+z="Hello World"
+# z[0]='h' # This will raise an error because strings are immutable
+print(z)
+z="h"+z[1:] # This is the correct way to change the first character
+print(z) # prints 'hello World' 
+'''
+
+'''Python forces to treat strings as immutable to ensure data integrity and consistency.
+ If strings were mutable, changing a string in one part of the program could inadvertently 
+ affect other parts of the program that rely on the original string value. 
+ This immutability helps prevent bugs and makes code easier to understand and maintain.'''
+
+#______________________________________________________#
+
+# String Methods
+
+s=" Hello World "
+print(s.upper()) # prints ' HELLO WORLD '
+print(s.lower()) # prints ' hello world '
+print(s.strip()) # prints 'Hello World' strips leading and trailing whitespace
+print(s.lstrip()) # prints 'Hello World ' strips leading whitespace
+print(s.rstrip()) # prints ' Hello World' strips trailing whitespace
+print(s.replace("H","h")) # prints ' Hello world '
+print(s.split(" ")) # prints ['', 'hello', 'world', '']
+print(s.find("World")) # prints 7
+print(s.startswith(" hello")) # prints True
+print(s.endswith("world ")) # prints True
+print(s.count("o")) # prints 2
+print(s.capitalize()) # prints ' hello world '
+print(s.title()) # prints ' Hello World '
+print(s.isalpha()) # prints False
+print(s.isdigit()) # prints False
+print(s.isspace()) # prints False
+#print(s.index("w")) # prints 7
+print(s.rfind("o")) # prints 8
+print(s.zfill(20)) # prints '0000000000 hello world '
