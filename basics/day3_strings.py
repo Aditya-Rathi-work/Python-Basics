@@ -96,6 +96,54 @@ print(s.title()) # prints ' Hello World '
 print(s.isalpha()) # prints False
 print(s.isdigit()) # prints False
 print(s.isspace()) # prints False
-#print(s.index("w")) # prints 7
+print(s.index("W")) # prints 7
 print(s.rfind("o")) # prints 8
 print(s.zfill(20)) # prints '0000000000 hello world '
+print(s.isalpha()) # prints False when string contains non-alphabetic characters
+print(s.isdigit()) # prints False when string contains non-digit characters
+print(s.isspace()) # prints False when string contains non-space characters
+print(s.startswith(" hello")) # prints True
+print(s.endswith("world ")) # prints True
+print(s.isalnum()) # prints False
+
+#______________________________________________________#
+
+# Escape Characters
+# Escape characters are special characters that are used to represent certain whitespace or non-printable characters in a string.
+# They are preceded by a backslash (\) to indicate that they have a special meaning.
+# Common escape characters include:
+# \n - Newline
+# \t - Tab
+# \\ - Backslash
+# \' - Single Quote
+# \" - Double Quote
+text="Hello\nWorld"
+print(text) # prints Hello and World on separate lines
+text="Hello\tWorld"
+print(text) # prints Hello and World separated by a tab
+text="He said, \"Hello World!\""
+print(text) # prints He said, "Hello World!"
+text='It\'s a beautiful day!'
+print(text) # prints It's a beautiful day!
+text="This is a backslash: \\"
+print(text) # prints This is a backslash: \
+
+#______________________________________________________#
+
+#Formatted Strings (f-strings)]
+
+# Formatted strings, also known as f-strings, are a way to embed expressions inside string literals, using curly braces {}.
+# They are prefixed with the letter 'f' or 'F' before the opening quotation mark.
+# F-strings provide a concise and convenient way to include variables and expressions within strings.
+
+name="Alice"
+age=30
+greeting=f"Hello, my name is {name} and I am {age} years old."
+print(greeting) # prints 'Hello, my name is Alice and I am 30 years old.'
+pi=3.14159
+formatted_pi=f"Pi rounded to 2 decimal places is {pi:.2f}"
+print(formatted_pi) # prints 'Pi rounded to 2 decimal places is 3.14'
+x=1340
+y=50
+calculation=f"The sum of {x} and {y} is {x+y}"
+print(calculation) # prints 'The sum of 1340 and 50 is 1390'
